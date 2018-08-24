@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enquiry Form</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button color="primary" (click)="onClickTakePhotoBtn()">Take photo</button>
+  <div *ngIf="imageBase64">
+    <h2 style="color:blue;">Selected image</h2>
+    <img width="200px" [src]="imageBase64" alt="picture" />
+  </div>
+</ion-content>
+
